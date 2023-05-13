@@ -1,6 +1,6 @@
 ﻿namespace BabyFoot_app
 {
-    partial class Match
+    partial class MatchForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Match));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchForm));
             But1 = new PictureBox();
             But2 = new PictureBox();
             pictureBox1 = new PictureBox();
@@ -55,9 +55,10 @@
             pictureBox22 = new PictureBox();
             pictureBox23 = new PictureBox();
             pictureBox24 = new PictureBox();
+            NbrBut2Rouge = new Label();
+            btnFin_match = new Button();
+            Score = new Label();
             label1 = new Label();
-            label2 = new Label();
-            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)But1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)But2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -320,44 +321,57 @@
             pictureBox24.TabIndex = 14;
             pictureBox24.TabStop = false;
             // 
+            // NbrBut2Rouge
+            // 
+            NbrBut2Rouge.AutoSize = true;
+            NbrBut2Rouge.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            NbrBut2Rouge.Location = new Point(133, 65);
+            NbrBut2Rouge.Name = "NbrBut2Rouge";
+            NbrBut2Rouge.Size = new Size(21, 24);
+            NbrBut2Rouge.TabIndex = 26;
+            NbrBut2Rouge.Text = "0\r\n";
+            // 
+            // btnFin_match
+            // 
+            btnFin_match.Location = new Point(815, 29);
+            btnFin_match.Name = "btnFin_match";
+            btnFin_match.Size = new Size(133, 29);
+            btnFin_match.TabIndex = 27;
+            btnFin_match.Text = "Fin du match";
+            btnFin_match.UseVisualStyleBackColor = true;
+            btnFin_match.Click += btnFin_match_Click;
+            // 
+            // Score
+            // 
+            Score.AutoSize = true;
+            Score.Location = new Point(92, 38);
+            Score.Name = "Score";
+            Score.Size = new Size(46, 20);
+            Score.TabIndex = 28;
+            Score.Text = "Score";
+            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(40, 65);
+            label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(79, 65);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Size = new Size(21, 24);
+            label1.TabIndex = 29;
+            label1.Text = "0\r\n";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(133, 65);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 26;
-            label2.Text = "label2";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(860, 38);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 27;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // Match
+            // MatchForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(985, 614);
-            Controls.Add(button1);
-            Controls.Add(label2);
-            Controls.Add(pictureBox13);
             Controls.Add(label1);
+            Controls.Add(Score);
+            Controls.Add(btnFin_match);
+            Controls.Add(NbrBut2Rouge);
+            Controls.Add(pictureBox13);
             Controls.Add(pictureBox14);
             Controls.Add(pictureBox15);
             Controls.Add(pictureBox16);
@@ -383,9 +397,10 @@
             Controls.Add(pictureBox1);
             Controls.Add(But2);
             Controls.Add(But1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(1003, 661);
             MinimumSize = new Size(1003, 661);
-            Name = "Match";
+            Name = "MatchForm";
             Text = "Match";
             ((System.ComponentModel.ISupportInitialize)But1).EndInit();
             ((System.ComponentModel.ISupportInitialize)But2).EndInit();
@@ -445,8 +460,9 @@
         private PictureBox pictureBox22;
         private PictureBox pictureBox23;
         private PictureBox pictureBox24;
+        private Label NbrBut2Rouge;
+        private Button btnFin_match;
+        private Label Score;
         private Label label1;
-        private Label label2;
-        private Button button1;
     }
 }
