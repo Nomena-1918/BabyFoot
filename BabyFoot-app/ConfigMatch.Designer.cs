@@ -1,6 +1,6 @@
 ﻿namespace BabyFoot_app
 {
-    partial class Form1
+    partial class ConfigMatch
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnValider = new Button();
+            SuspendLayout();
+            // 
+            // btnValider
+            // 
+            btnValider.Location = new Point(372, 306);
+            btnValider.Name = "btnValider";
+            btnValider.Size = new Size(94, 29);
+            btnValider.TabIndex = 0;
+            btnValider.Text = "Valider";
+            btnValider.UseVisualStyleBackColor = true;
+            btnValider.Click += btnValider_Click;
+            // 
+            // ConfigMatch
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnValider);
+            Name = "ConfigMatch";
+            Text = "ConfigMatch";
+            Load += ConfigMatch_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnValider;
     }
 }

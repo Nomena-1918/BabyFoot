@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BabyFoot\\BabyFoot-app\\BabyFoot-app.csproj",
+      "projectUniqueName": "D:\\Projet_C#\\BabyFoot\\BabyFoot-app\\BabyFoot-app.csproj",
       "projectName": "BabyFoot-app",
-      "projectPath": "D:\\BabyFoot\\BabyFoot-app\\BabyFoot-app.csproj",
+      "projectPath": "D:\\Projet_C#\\BabyFoot\\BabyFoot-app\\BabyFoot-app.csproj",
       "packagesPath": "C:\\Users\\ea2sT\\.nuget\\packages\\",
-      "outputPath": "D:\\BabyFoot\\BabyFoot-app\\obj\\",
+      "outputPath": "D:\\Projet_C#\\BabyFoot\\BabyFoot-app\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
