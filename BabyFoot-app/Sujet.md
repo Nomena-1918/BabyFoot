@@ -85,17 +85,17 @@ Tables :
    
 - Configuration match :
     - Joueur(id, nom)
-    - Match(id, idJ1, idJ2, valeurJeton) check idJ1 != idJ2 et valeurJeton > 0
-    - Mise(id, idM, idJ, valeur) check valeur >= 0 
+    - Match(id, idJ1, idJ2, valeurJeton, date) check idJ1 != idJ2, valeurJeton > 0
+    - Mise(id, idMatch, idJ, valeurMise) check valeur >= 0 
 
 - Jeu :
-    - Enum : typeAction(passe=0, interception=0, tirDirect=1, tirIndirect=1)
-    - Action(id, idM, idJ, typeAction, valeur)
+    - Action(id, idM, idJ, typeAction(tir d ou i), valeur)
 
     <br>
 Vues : 
 
 - Résultats :
+    - v_lastMatch(idM)
     - v_score(idM, idJ1, nomJ1, nbButs(sum(Action.valeur1)) ,idJ2, nomJ2, nbButs(sum(Action.valeur2))
     - v_AffResultatsDernierMatch(idM, v_score, valeurJeton, miseJ1 (sum(MiseJ1)), miseJ2 (sum(MiseJ2)), sommeGagnéeVainqueur)
 
