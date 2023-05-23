@@ -1,10 +1,8 @@
-﻿/*create table Joueur(
+﻿/*
+create table Joueur(
 	id int identity(1,1) primary key, 
 	nom nchar(20)
 );
-
-insert into Joueur(nom) values ('Player1'), ('Player2');
-
 
 
 create table MatchBabyFoot(
@@ -20,9 +18,6 @@ ALTER TABLE MatchBabyFoot
 ADD CHECK (idJ1!=idJ2);
 
 
---insert into MatchBabyFoot values(1, 1, 2, 500, default); 
---select * from MatchBabyFoot;
-
 create table Mise(
 	id int identity(1,1) primary key,
 	idM int not null, 
@@ -31,43 +26,60 @@ create table Mise(
 	foreign key (idM) references MatchBabyFoot(id), 
 	foreign key (idJ) references Joueur(id)
 );
-*/
---insert into matchbabyfoot(idJ1, idJ2, valeurJeton ,dateMatch) values (1, 2, 200, default);
 
---select * from MatchBabyFoot;
 
---insert into mise(idM, idJ, valeurMise) values (1, 1, 500);
---insert into mise(idM, idJ, valeurMise) values (1, 2, 500);
 
---select * from Mise;
-
---type action : tir direct 0, tir indirect 1
---valeur : 1 but
 /*
-create table Action(
+create table ActionFoot(
 	id int identity(1,1) primary key,
 	idM int, 
 	idJ int, 
-	typeAction int default 0, 
+	typeAction nchar(20) default 'tir', 
 	valeur int default 1,
-	dateAction date default getdate(),
+	dateAction datetime default getdate(),
 	foreign key (idJ) references Joueur(id),
 	foreign key (idM) references MatchBabyFoot(id)
 );
+
 */
---insert into Action(idM, idJ, typeAction, valeur ,dateAction) values (1, 2, 0, 1, default);
---select * from Action;
-/*
-create view v_lastMatch as 
-select max(id) as idLastMatch from MatchBabyFoot;
+--create or replace view v_lastMatch as 
+	--select max(id), idJ1, idJ2, valeurJeton, dateMatch as idLastMatch from MatchBabyFoot;
+
+
 */
 /*
-create view v_score as
-select Action.idM, Action.idJ, Joueur.nom, sum(Action.valeur) as nbButs
-	from Action 
-	join Joueur on Joueur.id=Action.idJ
-	group by Action.idM, Action.idJ, Joueur.nom;
+create view v_lastMatchComp as 
+select id, idJ1, idJ2, valeurJeton, dateMatch 
+from MatchBabyFoot
+where id=(select * from v_lastMatch);
 */
 
-select id, idJ1, idJ2, valeurJeton, dateMatch from MatchBabyFoot where id=(select * from v_lastMatch);
+select * from v_lastMatchComp;
+
+/*
+create view v_miseJoueurDernierMatch as
+select idM, idJ, sum(valeurMise) as miseJoueur from Mise 
+where idM=(select * from v_lastMatch)
+group by idM, idJ ;
+*/
+
+select * from v_miseJoueurDernierMatch;
+
+
+/*
+create view v_score as
+select ActionFoot.idM, ActionFoot.idJ, Joueur.nom, sum(ActionFoot.valeur) as nbButs
+	from ActionFoot 
+	join Joueur on Joueur.id=ActionFoot.idJ
+	where idM=(select * from v_lastMatch)
+	group by ActionFoot.idM, ActionFoot.idJ, Joueur.nom;
+*/
+
+
+select * from v_score;
+
+
+
+
+
 

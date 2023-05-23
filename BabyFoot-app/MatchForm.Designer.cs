@@ -28,441 +28,604 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchForm));
-            But1 = new PictureBox();
+            panel1 = new Panel();
+            pictureBox_G1 = new PictureBox();
+            pictureBox_G2 = new PictureBox();
+            pictureBox_defJ2_1 = new PictureBox();
+            pictureBox_defJ2_3 = new PictureBox();
+            pictureBox_defJ2_2 = new PictureBox();
+            pictureBox_midJ2_5 = new PictureBox();
+            pictureBox_midJ2_1 = new PictureBox();
+            pictureBox_midJ2_2 = new PictureBox();
+            pictureBox_midJ2_4 = new PictureBox();
+            pictureBox_midJ2_3 = new PictureBox();
+            pictureBox_attJ2_1 = new PictureBox();
+            pictureBox_attJ2_3 = new PictureBox();
+            pictureBox_attJ2_2 = new PictureBox();
+            pictureBox_attJ1_1 = new PictureBox();
+            pictureBox_attJ1_3 = new PictureBox();
+            pictureBox_attJ1_2 = new PictureBox();
+            pictureBox_midJ1_5 = new PictureBox();
+            pictureBox_midJ1_1 = new PictureBox();
+            pictureBox_midJ1_2 = new PictureBox();
+            pictureBox_midJ1_4 = new PictureBox();
+            pictureBox_midJ1_3 = new PictureBox();
+            pictureBox_defJ1_1 = new PictureBox();
+            pictureBox_defJ1_3 = new PictureBox();
+            pictureBox_defJ1_2 = new PictureBox();
+            pictureBox_but2 = new PictureBox();
+            pictureBox_but1 = new PictureBox();
+            pictureBox_ball = new PictureBox();
             But2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox13 = new PictureBox();
-            pictureBox14 = new PictureBox();
-            pictureBox15 = new PictureBox();
-            pictureBox16 = new PictureBox();
-            pictureBox17 = new PictureBox();
             pictureBox18 = new PictureBox();
-            pictureBox19 = new PictureBox();
-            pictureBox20 = new PictureBox();
-            pictureBox21 = new PictureBox();
-            pictureBox22 = new PictureBox();
-            pictureBox23 = new PictureBox();
-            pictureBox24 = new PictureBox();
-            NbrBut2Rouge = new Label();
             btnFin_match = new Button();
-            Score = new Label();
-            label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)But1).BeginInit();
+            label_scoreJ2 = new Label();
+            label_nomJ1 = new Label();
+            label_scoreJ1 = new Label();
+            label_nomJ2 = new Label();
+            label5 = new Label();
+            timer_fifa = new System.Windows.Forms.Timer(components);
+            panel_score = new Panel();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_G1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_G2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ2_1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ2_3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ2_2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ1_1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ1_3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ1_2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_but2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_but1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ball).BeginInit();
             ((System.ComponentModel.ISupportInitialize)But2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
             SuspendLayout();
             // 
-            // But1
+            // panel1
             // 
-            But1.BackColor = SystemColors.ActiveCaptionText;
-            But1.Location = new Point(3, 231);
-            But1.Name = "But1";
-            But1.Size = new Size(28, 154);
-            But1.TabIndex = 0;
-            But1.TabStop = false;
+            panel1.BackColor = Color.LimeGreen;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(pictureBox_G1);
+            panel1.Controls.Add(pictureBox_G2);
+            panel1.Controls.Add(pictureBox_defJ2_1);
+            panel1.Controls.Add(pictureBox_defJ2_3);
+            panel1.Controls.Add(pictureBox_defJ2_2);
+            panel1.Controls.Add(pictureBox_midJ2_5);
+            panel1.Controls.Add(pictureBox_midJ2_1);
+            panel1.Controls.Add(pictureBox_midJ2_2);
+            panel1.Controls.Add(pictureBox_midJ2_4);
+            panel1.Controls.Add(pictureBox_midJ2_3);
+            panel1.Controls.Add(pictureBox_attJ2_1);
+            panel1.Controls.Add(pictureBox_attJ2_3);
+            panel1.Controls.Add(pictureBox_attJ2_2);
+            panel1.Controls.Add(pictureBox_attJ1_1);
+            panel1.Controls.Add(pictureBox_attJ1_3);
+            panel1.Controls.Add(pictureBox_attJ1_2);
+            panel1.Controls.Add(pictureBox_midJ1_5);
+            panel1.Controls.Add(pictureBox_midJ1_1);
+            panel1.Controls.Add(pictureBox_midJ1_2);
+            panel1.Controls.Add(pictureBox_midJ1_4);
+            panel1.Controls.Add(pictureBox_midJ1_3);
+            panel1.Controls.Add(pictureBox_defJ1_1);
+            panel1.Controls.Add(pictureBox_defJ1_3);
+            panel1.Controls.Add(pictureBox_defJ1_2);
+            panel1.Controls.Add(pictureBox_but2);
+            panel1.Controls.Add(pictureBox_but1);
+            panel1.Controls.Add(pictureBox_ball);
+            panel1.Controls.Add(But2);
+            panel1.Controls.Add(pictureBox18);
+            panel1.Location = new Point(1, 62);
+            panel1.Margin = new Padding(4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1162, 723);
+            panel1.TabIndex = 0;
+            // 
+            // pictureBox_G1
+            // 
+            pictureBox_G1.BackColor = Color.Blue;
+            pictureBox_G1.Location = new Point(65, 326);
+            pictureBox_G1.Margin = new Padding(2);
+            pictureBox_G1.Name = "pictureBox_G1";
+            pictureBox_G1.Size = new Size(34, 63);
+            pictureBox_G1.TabIndex = 80;
+            pictureBox_G1.TabStop = false;
+            pictureBox_G1.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_G2
+            // 
+            pictureBox_G2.BackColor = Color.Firebrick;
+            pictureBox_G2.Location = new Point(1061, 326);
+            pictureBox_G2.Margin = new Padding(2);
+            pictureBox_G2.Name = "pictureBox_G2";
+            pictureBox_G2.Size = new Size(34, 63);
+            pictureBox_G2.TabIndex = 79;
+            pictureBox_G2.TabStop = false;
+            pictureBox_G2.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_defJ2_1
+            // 
+            pictureBox_defJ2_1.BackColor = Color.Firebrick;
+            pictureBox_defJ2_1.Location = new Point(965, 167);
+            pictureBox_defJ2_1.Margin = new Padding(2);
+            pictureBox_defJ2_1.Name = "pictureBox_defJ2_1";
+            pictureBox_defJ2_1.Size = new Size(34, 63);
+            pictureBox_defJ2_1.TabIndex = 78;
+            pictureBox_defJ2_1.TabStop = false;
+            pictureBox_defJ2_1.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_defJ2_3
+            // 
+            pictureBox_defJ2_3.BackColor = Color.Firebrick;
+            pictureBox_defJ2_3.Location = new Point(965, 483);
+            pictureBox_defJ2_3.Margin = new Padding(2);
+            pictureBox_defJ2_3.Name = "pictureBox_defJ2_3";
+            pictureBox_defJ2_3.Size = new Size(34, 63);
+            pictureBox_defJ2_3.TabIndex = 77;
+            pictureBox_defJ2_3.TabStop = false;
+            pictureBox_defJ2_3.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_defJ2_2
+            // 
+            pictureBox_defJ2_2.BackColor = Color.Firebrick;
+            pictureBox_defJ2_2.Location = new Point(965, 326);
+            pictureBox_defJ2_2.Margin = new Padding(2);
+            pictureBox_defJ2_2.Name = "pictureBox_defJ2_2";
+            pictureBox_defJ2_2.Size = new Size(34, 63);
+            pictureBox_defJ2_2.TabIndex = 76;
+            pictureBox_defJ2_2.TabStop = false;
+            pictureBox_defJ2_2.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ2_5
+            // 
+            pictureBox_midJ2_5.BackColor = Color.Firebrick;
+            pictureBox_midJ2_5.Location = new Point(807, 617);
+            pictureBox_midJ2_5.Margin = new Padding(2);
+            pictureBox_midJ2_5.Name = "pictureBox_midJ2_5";
+            pictureBox_midJ2_5.Size = new Size(34, 63);
+            pictureBox_midJ2_5.TabIndex = 75;
+            pictureBox_midJ2_5.TabStop = false;
+            pictureBox_midJ2_5.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ2_1
+            // 
+            pictureBox_midJ2_1.BackColor = Color.Firebrick;
+            pictureBox_midJ2_1.Location = new Point(807, 37);
+            pictureBox_midJ2_1.Margin = new Padding(2);
+            pictureBox_midJ2_1.Name = "pictureBox_midJ2_1";
+            pictureBox_midJ2_1.Size = new Size(34, 63);
+            pictureBox_midJ2_1.TabIndex = 74;
+            pictureBox_midJ2_1.TabStop = false;
+            pictureBox_midJ2_1.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ2_2
+            // 
+            pictureBox_midJ2_2.BackColor = Color.Firebrick;
+            pictureBox_midJ2_2.Location = new Point(807, 167);
+            pictureBox_midJ2_2.Margin = new Padding(2);
+            pictureBox_midJ2_2.Name = "pictureBox_midJ2_2";
+            pictureBox_midJ2_2.Size = new Size(34, 63);
+            pictureBox_midJ2_2.TabIndex = 73;
+            pictureBox_midJ2_2.TabStop = false;
+            pictureBox_midJ2_2.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ2_4
+            // 
+            pictureBox_midJ2_4.BackColor = Color.Firebrick;
+            pictureBox_midJ2_4.Location = new Point(807, 483);
+            pictureBox_midJ2_4.Margin = new Padding(2);
+            pictureBox_midJ2_4.Name = "pictureBox_midJ2_4";
+            pictureBox_midJ2_4.Size = new Size(34, 63);
+            pictureBox_midJ2_4.TabIndex = 72;
+            pictureBox_midJ2_4.TabStop = false;
+            pictureBox_midJ2_4.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ2_3
+            // 
+            pictureBox_midJ2_3.BackColor = Color.Firebrick;
+            pictureBox_midJ2_3.Location = new Point(807, 326);
+            pictureBox_midJ2_3.Margin = new Padding(2);
+            pictureBox_midJ2_3.Name = "pictureBox_midJ2_3";
+            pictureBox_midJ2_3.Size = new Size(34, 63);
+            pictureBox_midJ2_3.TabIndex = 71;
+            pictureBox_midJ2_3.TabStop = false;
+            pictureBox_midJ2_3.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_attJ2_1
+            // 
+            pictureBox_attJ2_1.BackColor = Color.Firebrick;
+            pictureBox_attJ2_1.Location = new Point(671, 167);
+            pictureBox_attJ2_1.Margin = new Padding(2);
+            pictureBox_attJ2_1.Name = "pictureBox_attJ2_1";
+            pictureBox_attJ2_1.Size = new Size(34, 63);
+            pictureBox_attJ2_1.TabIndex = 70;
+            pictureBox_attJ2_1.TabStop = false;
+            pictureBox_attJ2_1.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_attJ2_3
+            // 
+            pictureBox_attJ2_3.BackColor = Color.Firebrick;
+            pictureBox_attJ2_3.Location = new Point(671, 483);
+            pictureBox_attJ2_3.Margin = new Padding(2);
+            pictureBox_attJ2_3.Name = "pictureBox_attJ2_3";
+            pictureBox_attJ2_3.Size = new Size(34, 63);
+            pictureBox_attJ2_3.TabIndex = 69;
+            pictureBox_attJ2_3.TabStop = false;
+            pictureBox_attJ2_3.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_attJ2_2
+            // 
+            pictureBox_attJ2_2.BackColor = Color.Firebrick;
+            pictureBox_attJ2_2.Location = new Point(671, 326);
+            pictureBox_attJ2_2.Margin = new Padding(2);
+            pictureBox_attJ2_2.Name = "pictureBox_attJ2_2";
+            pictureBox_attJ2_2.Size = new Size(34, 63);
+            pictureBox_attJ2_2.TabIndex = 68;
+            pictureBox_attJ2_2.TabStop = false;
+            pictureBox_attJ2_2.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_attJ1_1
+            // 
+            pictureBox_attJ1_1.BackColor = Color.Blue;
+            pictureBox_attJ1_1.Location = new Point(445, 167);
+            pictureBox_attJ1_1.Margin = new Padding(2);
+            pictureBox_attJ1_1.Name = "pictureBox_attJ1_1";
+            pictureBox_attJ1_1.Size = new Size(34, 63);
+            pictureBox_attJ1_1.TabIndex = 67;
+            pictureBox_attJ1_1.TabStop = false;
+            pictureBox_attJ1_1.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_attJ1_3
+            // 
+            pictureBox_attJ1_3.BackColor = Color.Blue;
+            pictureBox_attJ1_3.Location = new Point(445, 483);
+            pictureBox_attJ1_3.Margin = new Padding(2);
+            pictureBox_attJ1_3.Name = "pictureBox_attJ1_3";
+            pictureBox_attJ1_3.Size = new Size(34, 63);
+            pictureBox_attJ1_3.TabIndex = 66;
+            pictureBox_attJ1_3.TabStop = false;
+            pictureBox_attJ1_3.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_attJ1_2
+            // 
+            pictureBox_attJ1_2.BackColor = Color.Blue;
+            pictureBox_attJ1_2.Location = new Point(445, 326);
+            pictureBox_attJ1_2.Margin = new Padding(2);
+            pictureBox_attJ1_2.Name = "pictureBox_attJ1_2";
+            pictureBox_attJ1_2.Size = new Size(34, 63);
+            pictureBox_attJ1_2.TabIndex = 65;
+            pictureBox_attJ1_2.TabStop = false;
+            pictureBox_attJ1_2.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ1_5
+            // 
+            pictureBox_midJ1_5.BackColor = Color.Blue;
+            pictureBox_midJ1_5.Location = new Point(307, 617);
+            pictureBox_midJ1_5.Margin = new Padding(2);
+            pictureBox_midJ1_5.Name = "pictureBox_midJ1_5";
+            pictureBox_midJ1_5.Size = new Size(34, 63);
+            pictureBox_midJ1_5.TabIndex = 64;
+            pictureBox_midJ1_5.TabStop = false;
+            pictureBox_midJ1_5.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ1_1
+            // 
+            pictureBox_midJ1_1.BackColor = Color.Blue;
+            pictureBox_midJ1_1.Location = new Point(307, 37);
+            pictureBox_midJ1_1.Margin = new Padding(2);
+            pictureBox_midJ1_1.Name = "pictureBox_midJ1_1";
+            pictureBox_midJ1_1.Size = new Size(34, 63);
+            pictureBox_midJ1_1.TabIndex = 63;
+            pictureBox_midJ1_1.TabStop = false;
+            pictureBox_midJ1_1.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ1_2
+            // 
+            pictureBox_midJ1_2.BackColor = Color.Blue;
+            pictureBox_midJ1_2.Location = new Point(307, 167);
+            pictureBox_midJ1_2.Margin = new Padding(2);
+            pictureBox_midJ1_2.Name = "pictureBox_midJ1_2";
+            pictureBox_midJ1_2.Size = new Size(34, 63);
+            pictureBox_midJ1_2.TabIndex = 62;
+            pictureBox_midJ1_2.TabStop = false;
+            pictureBox_midJ1_2.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ1_4
+            // 
+            pictureBox_midJ1_4.BackColor = Color.Blue;
+            pictureBox_midJ1_4.Location = new Point(307, 483);
+            pictureBox_midJ1_4.Margin = new Padding(2);
+            pictureBox_midJ1_4.Name = "pictureBox_midJ1_4";
+            pictureBox_midJ1_4.Size = new Size(34, 63);
+            pictureBox_midJ1_4.TabIndex = 61;
+            pictureBox_midJ1_4.TabStop = false;
+            pictureBox_midJ1_4.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_midJ1_3
+            // 
+            pictureBox_midJ1_3.BackColor = Color.Blue;
+            pictureBox_midJ1_3.Location = new Point(307, 326);
+            pictureBox_midJ1_3.Margin = new Padding(2);
+            pictureBox_midJ1_3.Name = "pictureBox_midJ1_3";
+            pictureBox_midJ1_3.Size = new Size(34, 63);
+            pictureBox_midJ1_3.TabIndex = 60;
+            pictureBox_midJ1_3.TabStop = false;
+            pictureBox_midJ1_3.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_defJ1_1
+            // 
+            pictureBox_defJ1_1.BackColor = Color.Blue;
+            pictureBox_defJ1_1.Location = new Point(171, 167);
+            pictureBox_defJ1_1.Margin = new Padding(2);
+            pictureBox_defJ1_1.Name = "pictureBox_defJ1_1";
+            pictureBox_defJ1_1.Size = new Size(34, 63);
+            pictureBox_defJ1_1.TabIndex = 59;
+            pictureBox_defJ1_1.TabStop = false;
+            pictureBox_defJ1_1.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_defJ1_3
+            // 
+            pictureBox_defJ1_3.BackColor = Color.Blue;
+            pictureBox_defJ1_3.Location = new Point(171, 483);
+            pictureBox_defJ1_3.Margin = new Padding(2);
+            pictureBox_defJ1_3.Name = "pictureBox_defJ1_3";
+            pictureBox_defJ1_3.Size = new Size(34, 63);
+            pictureBox_defJ1_3.TabIndex = 58;
+            pictureBox_defJ1_3.TabStop = false;
+            pictureBox_defJ1_3.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_defJ1_2
+            // 
+            pictureBox_defJ1_2.BackColor = Color.Blue;
+            pictureBox_defJ1_2.Location = new Point(171, 326);
+            pictureBox_defJ1_2.Margin = new Padding(2);
+            pictureBox_defJ1_2.Name = "pictureBox_defJ1_2";
+            pictureBox_defJ1_2.Size = new Size(34, 63);
+            pictureBox_defJ1_2.TabIndex = 57;
+            pictureBox_defJ1_2.TabStop = false;
+            pictureBox_defJ1_2.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_but2
+            // 
+            pictureBox_but2.BackColor = SystemColors.ActiveCaptionText;
+            pictureBox_but2.Location = new Point(1133, 265);
+            pictureBox_but2.Margin = new Padding(2);
+            pictureBox_but2.Name = "pictureBox_but2";
+            pictureBox_but2.Size = new Size(32, 180);
+            pictureBox_but2.TabIndex = 56;
+            pictureBox_but2.TabStop = false;
+            // 
+            // pictureBox_but1
+            // 
+            pictureBox_but1.BackColor = SystemColors.ActiveCaptionText;
+            pictureBox_but1.Location = new Point(3, 265);
+            pictureBox_but1.Margin = new Padding(2);
+            pictureBox_but1.Name = "pictureBox_but1";
+            pictureBox_but1.Size = new Size(32, 180);
+            pictureBox_but1.TabIndex = 55;
+            pictureBox_but1.TabStop = false;
+            // 
+            // pictureBox_ball
+            // 
+            pictureBox_ball.BackColor = Color.Ivory;
+            pictureBox_ball.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox_ball.Location = new Point(564, 336);
+            pictureBox_ball.Margin = new Padding(2);
+            pictureBox_ball.Name = "pictureBox_ball";
+            pictureBox_ball.Size = new Size(34, 32);
+            pictureBox_ball.TabIndex = 54;
+            pictureBox_ball.TabStop = false;
             // 
             // But2
             // 
             But2.BackColor = SystemColors.ActiveCaptionText;
-            But2.Location = new Point(958, 231);
+            But2.Location = new Point(1728, 393);
+            But2.Margin = new Padding(4);
             But2.Name = "But2";
-            But2.Size = new Size(28, 154);
-            But2.TabIndex = 1;
+            But2.Size = new Size(42, 245);
+            But2.TabIndex = 34;
             But2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = SystemColors.HotTrack;
-            pictureBox1.Location = new Point(79, 272);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(30, 73);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = SystemColors.HotTrack;
-            pictureBox2.Location = new Point(174, 143);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 73);
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = SystemColors.HotTrack;
-            pictureBox3.Location = new Point(174, 272);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(30, 73);
-            pictureBox3.TabIndex = 4;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackColor = SystemColors.HotTrack;
-            pictureBox4.Location = new Point(174, 401);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(30, 73);
-            pictureBox4.TabIndex = 5;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = SystemColors.HotTrack;
-            pictureBox5.Location = new Point(388, 12);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(30, 73);
-            pictureBox5.TabIndex = 6;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BackColor = SystemColors.HotTrack;
-            pictureBox6.Location = new Point(388, 145);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(30, 73);
-            pictureBox6.TabIndex = 7;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackColor = SystemColors.HotTrack;
-            pictureBox7.Location = new Point(388, 401);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(30, 73);
-            pictureBox7.TabIndex = 8;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackColor = SystemColors.HotTrack;
-            pictureBox8.Location = new Point(388, 519);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(30, 73);
-            pictureBox8.TabIndex = 9;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.BackColor = SystemColors.HotTrack;
-            pictureBox9.Location = new Point(388, 274);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(30, 73);
-            pictureBox9.TabIndex = 10;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.BackColor = SystemColors.HotTrack;
-            pictureBox10.Location = new Point(686, 401);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(30, 73);
-            pictureBox10.TabIndex = 13;
-            pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.BackColor = SystemColors.HotTrack;
-            pictureBox11.Location = new Point(686, 272);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(30, 73);
-            pictureBox11.TabIndex = 12;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.BackColor = SystemColors.HotTrack;
-            pictureBox12.Location = new Point(686, 143);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(30, 73);
-            pictureBox12.TabIndex = 11;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            pictureBox13.BackColor = Color.Firebrick;
-            pictureBox13.Location = new Point(561, 401);
-            pictureBox13.Name = "pictureBox13";
-            pictureBox13.Size = new Size(30, 73);
-            pictureBox13.TabIndex = 25;
-            pictureBox13.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            pictureBox14.BackColor = Color.Firebrick;
-            pictureBox14.Location = new Point(908, 272);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(30, 73);
-            pictureBox14.TabIndex = 24;
-            pictureBox14.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            pictureBox15.BackColor = Color.Firebrick;
-            pictureBox15.Location = new Point(561, 143);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(30, 73);
-            pictureBox15.TabIndex = 23;
-            pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            pictureBox16.BackColor = Color.Firebrick;
-            pictureBox16.Location = new Point(782, 272);
-            pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(30, 73);
-            pictureBox16.TabIndex = 22;
-            pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            pictureBox17.BackColor = Color.Firebrick;
-            pictureBox17.Location = new Point(561, 519);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(30, 73);
-            pictureBox17.TabIndex = 21;
-            pictureBox17.TabStop = false;
             // 
             // pictureBox18
             // 
             pictureBox18.BackColor = Color.Firebrick;
-            pictureBox18.Location = new Point(782, 401);
+            pictureBox18.Location = new Point(1470, 672);
+            pictureBox18.Margin = new Padding(4);
             pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(30, 73);
-            pictureBox18.TabIndex = 20;
+            pictureBox18.Size = new Size(45, 102);
+            pictureBox18.TabIndex = 53;
             pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.BackColor = Color.Firebrick;
-            pictureBox19.Location = new Point(782, 143);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(30, 73);
-            pictureBox19.TabIndex = 19;
-            pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            pictureBox20.BackColor = Color.Firebrick;
-            pictureBox20.Location = new Point(561, 12);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(30, 73);
-            pictureBox20.TabIndex = 18;
-            pictureBox20.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            pictureBox21.BackColor = Color.Firebrick;
-            pictureBox21.Location = new Point(257, 401);
-            pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(30, 73);
-            pictureBox21.TabIndex = 17;
-            pictureBox21.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            pictureBox22.BackColor = Color.Firebrick;
-            pictureBox22.Location = new Point(561, 263);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(30, 73);
-            pictureBox22.TabIndex = 16;
-            pictureBox22.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            pictureBox23.BackColor = Color.Firebrick;
-            pictureBox23.Location = new Point(257, 145);
-            pictureBox23.Name = "pictureBox23";
-            pictureBox23.Size = new Size(30, 73);
-            pictureBox23.TabIndex = 15;
-            pictureBox23.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            pictureBox24.BackColor = Color.Firebrick;
-            pictureBox24.Location = new Point(257, 274);
-            pictureBox24.Name = "pictureBox24";
-            pictureBox24.Size = new Size(30, 73);
-            pictureBox24.TabIndex = 14;
-            pictureBox24.TabStop = false;
-            // 
-            // NbrBut2Rouge
-            // 
-            NbrBut2Rouge.AutoSize = true;
-            NbrBut2Rouge.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            NbrBut2Rouge.Location = new Point(133, 65);
-            NbrBut2Rouge.Name = "NbrBut2Rouge";
-            NbrBut2Rouge.Size = new Size(21, 24);
-            NbrBut2Rouge.TabIndex = 26;
-            NbrBut2Rouge.Text = "0\r\n";
             // 
             // btnFin_match
             // 
-            btnFin_match.Location = new Point(815, 29);
+            btnFin_match.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            btnFin_match.Location = new Point(1011, 13);
+            btnFin_match.Margin = new Padding(4);
             btnFin_match.Name = "btnFin_match";
-            btnFin_match.Size = new Size(133, 29);
-            btnFin_match.TabIndex = 27;
+            btnFin_match.Size = new Size(152, 31);
+            btnFin_match.TabIndex = 59;
             btnFin_match.Text = "Fin du match";
             btnFin_match.UseVisualStyleBackColor = true;
             btnFin_match.Click += btnFin_match_Click;
             // 
-            // Score
+            // label_scoreJ2
             // 
-            Score.AutoSize = true;
-            Score.Location = new Point(92, 38);
-            Score.Name = "Score";
-            Score.Size = new Size(46, 20);
-            Score.TabIndex = 28;
-            Score.Text = "Score";
+            label_scoreJ2.AutoSize = true;
+            label_scoreJ2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label_scoreJ2.Location = new Point(586, 15);
+            label_scoreJ2.Name = "label_scoreJ2";
+            label_scoreJ2.Size = new Size(33, 37);
+            label_scoreJ2.TabIndex = 60;
+            label_scoreJ2.Text = "0";
             // 
-            // label1
+            // label_nomJ1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(79, 65);
-            label1.Name = "label1";
-            label1.Size = new Size(21, 24);
-            label1.TabIndex = 29;
-            label1.Text = "0\r\n";
+            label_nomJ1.AutoSize = true;
+            label_nomJ1.Font = new Font("Segoe UI Semibold", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
+            label_nomJ1.Location = new Point(413, 21);
+            label_nomJ1.Name = "label_nomJ1";
+            label_nomJ1.Size = new Size(79, 31);
+            label_nomJ1.TabIndex = 61;
+            label_nomJ1.Text = "nomJ1";
+            // 
+            // label_scoreJ1
+            // 
+            label_scoreJ1.AutoSize = true;
+            label_scoreJ1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label_scoreJ1.Location = new Point(547, 15);
+            label_scoreJ1.Name = "label_scoreJ1";
+            label_scoreJ1.Size = new Size(33, 37);
+            label_scoreJ1.TabIndex = 62;
+            label_scoreJ1.Text = "0";
+            // 
+            // label_nomJ2
+            // 
+            label_nomJ2.AutoSize = true;
+            label_nomJ2.Font = new Font("Segoe UI Semibold", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point);
+            label_nomJ2.Location = new Point(672, 21);
+            label_nomJ2.Name = "label_nomJ2";
+            label_nomJ2.Size = new Size(83, 31);
+            label_nomJ2.TabIndex = 63;
+            label_nomJ2.Text = "nomJ2";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(573, 21);
+            label5.Name = "label5";
+            label5.Size = new Size(19, 30);
+            label5.TabIndex = 64;
+            label5.Text = ":";
+            // 
+            // timer_fifa
+            // 
+            timer_fifa.Enabled = true;
+            timer_fifa.Interval = 10;
+            timer_fifa.Tick += timer_fifa_Tick;
+            // 
+            // panel_score
+            // 
+            panel_score.Location = new Point(1, 1);
+            panel_score.MaximumSize = new Size(47, 61);
+            panel_score.MinimumSize = new Size(47, 61);
+            panel_score.Name = "panel_score";
+            panel_score.Size = new Size(47, 61);
+            panel_score.TabIndex = 65;
             // 
             // MatchForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(13F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(985, 614);
-            Controls.Add(label1);
-            Controls.Add(Score);
+            ClientSize = new Size(1166, 782);
+            Controls.Add(panel_score);
+            Controls.Add(label5);
+            Controls.Add(label_nomJ2);
+            Controls.Add(label_scoreJ1);
+            Controls.Add(label_nomJ1);
+            Controls.Add(label_scoreJ2);
+            Controls.Add(panel1);
             Controls.Add(btnFin_match);
-            Controls.Add(NbrBut2Rouge);
-            Controls.Add(pictureBox13);
-            Controls.Add(pictureBox14);
-            Controls.Add(pictureBox15);
-            Controls.Add(pictureBox16);
-            Controls.Add(pictureBox17);
-            Controls.Add(pictureBox18);
-            Controls.Add(pictureBox19);
-            Controls.Add(pictureBox20);
-            Controls.Add(pictureBox21);
-            Controls.Add(pictureBox22);
-            Controls.Add(pictureBox23);
-            Controls.Add(pictureBox24);
-            Controls.Add(pictureBox10);
-            Controls.Add(pictureBox11);
-            Controls.Add(pictureBox12);
-            Controls.Add(pictureBox9);
-            Controls.Add(pictureBox8);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Controls.Add(But2);
-            Controls.Add(But1);
+            Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MaximumSize = new Size(1003, 661);
-            MinimumSize = new Size(1003, 661);
+            Margin = new Padding(4);
+            MaximumSize = new Size(1184, 829);
+            MinimumSize = new Size(1184, 829);
             Name = "MatchForm";
-            Text = "Match";
-            ((System.ComponentModel.ISupportInitialize)But1).EndInit();
+            Text = "FIFA 94";
+            KeyDown += MatchForm_KeyDown;
+            KeyUp += MatchForm_KeyUp;
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox_G1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_G2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ2_3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ2_1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ2_3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ2_2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ1_1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ1_3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_attJ1_2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_but2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_but1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ball).EndInit();
             ((System.ComponentModel.ISupportInitialize)But2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox But1;
+        private Panel panel1;
         private PictureBox But2;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox10;
-        private PictureBox pictureBox11;
-        private PictureBox pictureBox12;
-        private PictureBox pictureBox13;
-        private PictureBox pictureBox14;
-        private PictureBox pictureBox15;
-        private PictureBox pictureBox16;
-        private PictureBox pictureBox17;
         private PictureBox pictureBox18;
-        private PictureBox pictureBox19;
-        private PictureBox pictureBox20;
-        private PictureBox pictureBox21;
-        private PictureBox pictureBox22;
-        private PictureBox pictureBox23;
-        private PictureBox pictureBox24;
-        private Label NbrBut2Rouge;
         private Button btnFin_match;
-        private Label Score;
-        private Label label1;
+        private PictureBox pictureBox_G1;
+        private PictureBox pictureBox_G2;
+        private PictureBox pictureBox_defJ2_1;
+        private PictureBox pictureBox_defJ2_3;
+        private PictureBox pictureBox_defJ2_2;
+        private PictureBox pictureBox_midJ2_5;
+        private PictureBox pictureBox_midJ2_1;
+        private PictureBox pictureBox_midJ2_2;
+        private PictureBox pictureBox_midJ2_4;
+        private PictureBox pictureBox_midJ2_3;
+        private PictureBox pictureBox_attJ2_3;
+        private PictureBox pictureBox_attJ2_2;
+        private PictureBox pictureBox_attJ1_1;
+        private PictureBox pictureBox_attJ1_3;
+        private PictureBox pictureBox_attJ1_2;
+        private PictureBox pictureBox_midJ1_5;
+        private PictureBox pictureBox_midJ1_1;
+        private PictureBox pictureBox_midJ1_2;
+        private PictureBox pictureBox_midJ1_4;
+        private PictureBox pictureBox_midJ1_3;
+        private PictureBox pictureBox_defJ1_1;
+        private PictureBox pictureBox_defJ1_3;
+        private PictureBox pictureBox_defJ1_2;
+        private PictureBox pictureBox_but2;
+        private PictureBox pictureBox_but1;
+        private PictureBox pictureBox_ball;
+        private Label label_scoreJ2;
+        private Label label_nomJ1;
+        private Label label_scoreJ1;
+        private Label label_nomJ2;
+        private Label label5;
+        private System.Windows.Forms.Timer timer_fifa;
+        private Panel panel_score;
+        public PictureBox pictureBox_attJ2_1;
     }
 }

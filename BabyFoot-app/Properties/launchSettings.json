@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BabyFoot-app": {
+      "commandName": "Project",
+      "sqlDebugging": true
+    }
+  }
+}
