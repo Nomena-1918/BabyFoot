@@ -31,7 +31,6 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchForm));
             panel1 = new Panel();
-            pictureBox_G1 = new PictureBox();
             pictureBox_G2 = new PictureBox();
             pictureBox_defJ2_1 = new PictureBox();
             pictureBox_defJ2_3 = new PictureBox();
@@ -52,12 +51,16 @@
             pictureBox_midJ1_2 = new PictureBox();
             pictureBox_midJ1_4 = new PictureBox();
             pictureBox_midJ1_3 = new PictureBox();
+            pictureBox_G1 = new PictureBox();
             pictureBox_defJ1_1 = new PictureBox();
             pictureBox_defJ1_3 = new PictureBox();
             pictureBox_defJ1_2 = new PictureBox();
+            pictureBox_ball = new PictureBox();
+            pictureBox_milieuTerrain = new PictureBox();
+            pictureBox_zoneDefDdroite = new PictureBox();
+            pictureBox_zoneDefGauche = new PictureBox();
             pictureBox_but2 = new PictureBox();
             pictureBox_but1 = new PictureBox();
-            pictureBox_ball = new PictureBox();
             But2 = new PictureBox();
             pictureBox18 = new PictureBox();
             btnFin_match = new Button();
@@ -68,8 +71,10 @@
             label5 = new Label();
             timer_fifa = new System.Windows.Forms.Timer(components);
             panel_score = new Panel();
+            timer_ball = new System.Windows.Forms.Timer(components);
+            label1 = new Label();
+            boolSelect = new Label();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_G1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_G2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_3).BeginInit();
@@ -90,12 +95,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_G1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ball).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_milieuTerrain).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_zoneDefDdroite).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_zoneDefGauche).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_but2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_but1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_ball).BeginInit();
             ((System.ComponentModel.ISupportInitialize)But2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             SuspendLayout();
@@ -104,7 +113,6 @@
             // 
             panel1.BackColor = Color.LimeGreen;
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Controls.Add(pictureBox_G1);
             panel1.Controls.Add(pictureBox_G2);
             panel1.Controls.Add(pictureBox_defJ2_1);
             panel1.Controls.Add(pictureBox_defJ2_3);
@@ -125,34 +133,27 @@
             panel1.Controls.Add(pictureBox_midJ1_2);
             panel1.Controls.Add(pictureBox_midJ1_4);
             panel1.Controls.Add(pictureBox_midJ1_3);
+            panel1.Controls.Add(pictureBox_G1);
             panel1.Controls.Add(pictureBox_defJ1_1);
             panel1.Controls.Add(pictureBox_defJ1_3);
             panel1.Controls.Add(pictureBox_defJ1_2);
+            panel1.Controls.Add(pictureBox_ball);
+            panel1.Controls.Add(pictureBox_milieuTerrain);
+            panel1.Controls.Add(pictureBox_zoneDefDdroite);
+            panel1.Controls.Add(pictureBox_zoneDefGauche);
             panel1.Controls.Add(pictureBox_but2);
             panel1.Controls.Add(pictureBox_but1);
-            panel1.Controls.Add(pictureBox_ball);
             panel1.Controls.Add(But2);
             panel1.Controls.Add(pictureBox18);
-            panel1.Location = new Point(1, 62);
+            panel1.Location = new Point(1, 56);
             panel1.Margin = new Padding(4);
             panel1.Name = "panel1";
             panel1.Size = new Size(1162, 723);
             panel1.TabIndex = 0;
             // 
-            // pictureBox_G1
-            // 
-            pictureBox_G1.BackColor = Color.Blue;
-            pictureBox_G1.Location = new Point(65, 326);
-            pictureBox_G1.Margin = new Padding(2);
-            pictureBox_G1.Name = "pictureBox_G1";
-            pictureBox_G1.Size = new Size(34, 63);
-            pictureBox_G1.TabIndex = 80;
-            pictureBox_G1.TabStop = false;
-            pictureBox_G1.Click += pictureBox_J_Click;
-            // 
             // pictureBox_G2
             // 
-            pictureBox_G2.BackColor = Color.Firebrick;
+            pictureBox_G2.BackColor = Color.DarkRed;
             pictureBox_G2.Location = new Point(1061, 326);
             pictureBox_G2.Margin = new Padding(2);
             pictureBox_G2.Name = "pictureBox_G2";
@@ -163,7 +164,7 @@
             // 
             // pictureBox_defJ2_1
             // 
-            pictureBox_defJ2_1.BackColor = Color.Firebrick;
+            pictureBox_defJ2_1.BackColor = Color.DarkRed;
             pictureBox_defJ2_1.Location = new Point(965, 167);
             pictureBox_defJ2_1.Margin = new Padding(2);
             pictureBox_defJ2_1.Name = "pictureBox_defJ2_1";
@@ -174,7 +175,7 @@
             // 
             // pictureBox_defJ2_3
             // 
-            pictureBox_defJ2_3.BackColor = Color.Firebrick;
+            pictureBox_defJ2_3.BackColor = Color.DarkRed;
             pictureBox_defJ2_3.Location = new Point(965, 483);
             pictureBox_defJ2_3.Margin = new Padding(2);
             pictureBox_defJ2_3.Name = "pictureBox_defJ2_3";
@@ -185,7 +186,7 @@
             // 
             // pictureBox_defJ2_2
             // 
-            pictureBox_defJ2_2.BackColor = Color.Firebrick;
+            pictureBox_defJ2_2.BackColor = Color.DarkRed;
             pictureBox_defJ2_2.Location = new Point(965, 326);
             pictureBox_defJ2_2.Margin = new Padding(2);
             pictureBox_defJ2_2.Name = "pictureBox_defJ2_2";
@@ -370,9 +371,20 @@
             pictureBox_midJ1_3.TabStop = false;
             pictureBox_midJ1_3.Click += pictureBox_J_Click;
             // 
+            // pictureBox_G1
+            // 
+            pictureBox_G1.BackColor = Color.DarkBlue;
+            pictureBox_G1.Location = new Point(65, 326);
+            pictureBox_G1.Margin = new Padding(2);
+            pictureBox_G1.Name = "pictureBox_G1";
+            pictureBox_G1.Size = new Size(34, 63);
+            pictureBox_G1.TabIndex = 80;
+            pictureBox_G1.TabStop = false;
+            pictureBox_G1.Click += pictureBox_J_Click;
+            // 
             // pictureBox_defJ1_1
             // 
-            pictureBox_defJ1_1.BackColor = Color.Blue;
+            pictureBox_defJ1_1.BackColor = Color.DarkBlue;
             pictureBox_defJ1_1.Location = new Point(171, 167);
             pictureBox_defJ1_1.Margin = new Padding(2);
             pictureBox_defJ1_1.Name = "pictureBox_defJ1_1";
@@ -383,7 +395,7 @@
             // 
             // pictureBox_defJ1_3
             // 
-            pictureBox_defJ1_3.BackColor = Color.Blue;
+            pictureBox_defJ1_3.BackColor = Color.DarkBlue;
             pictureBox_defJ1_3.Location = new Point(171, 483);
             pictureBox_defJ1_3.Margin = new Padding(2);
             pictureBox_defJ1_3.Name = "pictureBox_defJ1_3";
@@ -394,7 +406,7 @@
             // 
             // pictureBox_defJ1_2
             // 
-            pictureBox_defJ1_2.BackColor = Color.Blue;
+            pictureBox_defJ1_2.BackColor = Color.DarkBlue;
             pictureBox_defJ1_2.Location = new Point(171, 326);
             pictureBox_defJ1_2.Margin = new Padding(2);
             pictureBox_defJ1_2.Name = "pictureBox_defJ1_2";
@@ -402,6 +414,47 @@
             pictureBox_defJ1_2.TabIndex = 57;
             pictureBox_defJ1_2.TabStop = false;
             pictureBox_defJ1_2.Click += pictureBox_J_Click;
+            // 
+            // pictureBox_ball
+            // 
+            pictureBox_ball.BackColor = Color.Ivory;
+            pictureBox_ball.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox_ball.Location = new Point(564, 336);
+            pictureBox_ball.Margin = new Padding(2);
+            pictureBox_ball.Name = "pictureBox_ball";
+            pictureBox_ball.Size = new Size(34, 32);
+            pictureBox_ball.TabIndex = 54;
+            pictureBox_ball.TabStop = false;
+            // 
+            // pictureBox_milieuTerrain
+            // 
+            pictureBox_milieuTerrain.BackColor = SystemColors.ButtonFace;
+            pictureBox_milieuTerrain.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox_milieuTerrain.Location = new Point(576, 1);
+            pictureBox_milieuTerrain.Name = "pictureBox_milieuTerrain";
+            pictureBox_milieuTerrain.Size = new Size(10, 720);
+            pictureBox_milieuTerrain.TabIndex = 83;
+            pictureBox_milieuTerrain.TabStop = false;
+            // 
+            // pictureBox_zoneDefDdroite
+            // 
+            pictureBox_zoneDefDdroite.BackColor = SystemColors.ButtonFace;
+            pictureBox_zoneDefDdroite.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox_zoneDefDdroite.Location = new Point(950, 0);
+            pictureBox_zoneDefDdroite.Name = "pictureBox_zoneDefDdroite";
+            pictureBox_zoneDefDdroite.Size = new Size(10, 720);
+            pictureBox_zoneDefDdroite.TabIndex = 82;
+            pictureBox_zoneDefDdroite.TabStop = false;
+            // 
+            // pictureBox_zoneDefGauche
+            // 
+            pictureBox_zoneDefGauche.BackColor = SystemColors.ButtonHighlight;
+            pictureBox_zoneDefGauche.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox_zoneDefGauche.Location = new Point(210, 0);
+            pictureBox_zoneDefGauche.Name = "pictureBox_zoneDefGauche";
+            pictureBox_zoneDefGauche.Size = new Size(10, 720);
+            pictureBox_zoneDefGauche.TabIndex = 81;
+            pictureBox_zoneDefGauche.TabStop = false;
             // 
             // pictureBox_but2
             // 
@@ -422,17 +475,6 @@
             pictureBox_but1.Size = new Size(32, 180);
             pictureBox_but1.TabIndex = 55;
             pictureBox_but1.TabStop = false;
-            // 
-            // pictureBox_ball
-            // 
-            pictureBox_ball.BackColor = Color.Ivory;
-            pictureBox_ball.BorderStyle = BorderStyle.FixedSingle;
-            pictureBox_ball.Location = new Point(564, 336);
-            pictureBox_ball.Margin = new Padding(2);
-            pictureBox_ball.Name = "pictureBox_ball";
-            pictureBox_ball.Size = new Size(34, 32);
-            pictureBox_ball.TabIndex = 54;
-            pictureBox_ball.TabStop = false;
             // 
             // But2
             // 
@@ -470,7 +512,7 @@
             // 
             label_scoreJ2.AutoSize = true;
             label_scoreJ2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label_scoreJ2.Location = new Point(586, 15);
+            label_scoreJ2.Location = new Point(612, 15);
             label_scoreJ2.Name = "label_scoreJ2";
             label_scoreJ2.Size = new Size(33, 37);
             label_scoreJ2.TabIndex = 60;
@@ -490,7 +532,7 @@
             // 
             label_scoreJ1.AutoSize = true;
             label_scoreJ1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label_scoreJ1.Location = new Point(547, 15);
+            label_scoreJ1.Location = new Point(520, 15);
             label_scoreJ1.Name = "label_scoreJ1";
             label_scoreJ1.Size = new Size(33, 37);
             label_scoreJ1.TabIndex = 62;
@@ -524,11 +566,36 @@
             // panel_score
             // 
             panel_score.Location = new Point(1, 1);
-            panel_score.MaximumSize = new Size(47, 61);
-            panel_score.MinimumSize = new Size(47, 61);
+            panel_score.MaximumSize = new Size(47, 56);
+            panel_score.MinimumSize = new Size(47, 56);
             panel_score.Name = "panel_score";
-            panel_score.Size = new Size(47, 61);
+            panel_score.Size = new Size(47, 56);
             panel_score.TabIndex = 65;
+            // 
+            // timer_ball
+            // 
+            timer_ball.Enabled = true;
+            timer_ball.Interval = 10;
+            timer_ball.Tick += timer_ball_Tick;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(54, 21);
+            label1.Name = "label1";
+            label1.Size = new Size(167, 30);
+            label1.TabIndex = 66;
+            label1.Text = "isJoueurSelect : ";
+            // 
+            // boolSelect
+            // 
+            boolSelect.AutoSize = true;
+            boolSelect.Location = new Point(256, 22);
+            boolSelect.Name = "boolSelect";
+            boolSelect.Size = new Size(61, 30);
+            boolSelect.TabIndex = 67;
+            boolSelect.Text = "false";
             // 
             // MatchForm
             // 
@@ -536,6 +603,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1166, 782);
+            Controls.Add(boolSelect);
+            Controls.Add(label1);
             Controls.Add(panel_score);
             Controls.Add(label5);
             Controls.Add(label_nomJ2);
@@ -545,6 +614,7 @@
             Controls.Add(panel1);
             Controls.Add(btnFin_match);
             Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             MaximumSize = new Size(1184, 829);
@@ -554,7 +624,6 @@
             KeyDown += MatchForm_KeyDown;
             KeyUp += MatchForm_KeyUp;
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox_G1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_G2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ2_3).EndInit();
@@ -575,12 +644,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_midJ1_3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_G1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_defJ1_2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_ball).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_milieuTerrain).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_zoneDefDdroite).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox_zoneDefGauche).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_but2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_but1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox_ball).EndInit();
             ((System.ComponentModel.ISupportInitialize)But2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             ResumeLayout(false);
@@ -627,5 +700,11 @@
         private System.Windows.Forms.Timer timer_fifa;
         private Panel panel_score;
         public PictureBox pictureBox_attJ2_1;
+        private System.Windows.Forms.Timer timer_ball;
+        private Label label1;
+        private Label boolSelect;
+        private PictureBox pictureBox_milieuTerrain;
+        private PictureBox pictureBox_zoneDefDdroite;
+        private PictureBox pictureBox_zoneDefGauche;
     }
 }
